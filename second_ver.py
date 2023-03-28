@@ -1,3 +1,4 @@
+# Import stuff
 import discord
 from discord.ext import commands
 from discord import File
@@ -10,12 +11,14 @@ import time
 BOT_TOKEN = "YOUR BOT TOKEN"
 CHANNEL_ID = "DA CHANNEL ID"
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="!", intents=discord.Intents.all()) #permissions or something
 
 @bot.event
 async def on_ready():
-    print('Logged in as {0.user}'.format(bot))
+    print('Logged in as {0.user}'.format(bot)) # no idea
 
+    #open chrome, go to website, try to find the element (doesnt work) clear the field, send the string ELA22, press enter. Save the screenshot locally.
+    #quit. try to send the pic
 @bot.command(name='screenshot')
 async def screenshot(ctx):
     driver = webdriver.Chrome()
