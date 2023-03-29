@@ -30,6 +30,6 @@ client.run('BOT TOKEN')
 
 
 #upcoming:
-#Enter the class ID in the correct field.
+#Enter the class ID in the correct field. Refresh the page. 
 #Add a weekly timer.
-#Send in the correct channel.
+#Send the screenshot in the correct discord channel.
