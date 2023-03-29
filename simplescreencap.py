@@ -19,6 +19,8 @@ async def on_ready():
     driver = webdriver.Chrome()
     driver.get('https://web.skola24.se/timetable/timetable-viewer/studiumyrgo.skola24.se/Yrgo%20L%C3%A4rdomsgatan/')
     time.sleep(5)  # wait for 5 seconds
+    driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+    time.sleep(2) #waits for another 2 seconds to make sure the scrolling is successfull.
     driver.save_screenshot('screenshot.png')
     await channel.send(file=discord.File('screenshot.png'))
     driver.quit()
@@ -28,7 +30,6 @@ client.run('BOT TOKEN')
 
 
 #upcoming:
-#add PgDn to make the screenshot capture the whole page.
 #Enter the class ID in the correct field.
 #Add a weekly timer.
 #Send in the correct channel.
