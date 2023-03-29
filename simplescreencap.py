@@ -29,7 +29,13 @@ client.run('BOT TOKEN')
 
 
 
+#below: Xpath ID for the field where the class name is to be entered.
+# //*[@id="fed648b5395048755525b024ba77a8a8"]
+# find_element_by_xpath("//*[@class='stb-SearchBox']") ?
+
 #upcoming:
 #Enter the class ID in the correct field. Refresh the page. 
 #Add a weekly timer.
 #Send the screenshot in the correct discord channel.
+
+
