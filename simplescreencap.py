@@ -24,3 +24,11 @@ async def on_ready():
     driver.quit()
 
 client.run('BOT TOKEN')
+
+
+
+#upcoming:
+#add PgDn to make the screenshot capture the whole page.
+#Enter the class ID in the correct field.
+#Add a weekly timer.
+#Send in the correct channel.
