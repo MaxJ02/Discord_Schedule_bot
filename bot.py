@@ -18,10 +18,10 @@ async def on_ready():
     print('Bot is ready to cook')
     channel = client.get_channel(1234567890) #Replace with the desired discord channel ID. Can only be extracted by the server owner or server administrators.
     driver = webdriver.Chrome()
-    driver.get('https://web.skola24.se/timetable/timetable-viewer/studiumyrgo.skola24.se/Yrgo%20L%C3%A4rdomsgatan/')
+    driver.get('https://web.skola24.se/timetable/timetable-viewer/studiumyrgo.skola24.se/Yrgo%20L%C3%A4rdomsgatan/') #Can be replaced with the URL to your skola24 domain.
     time.sleep(5)  # wait for 5 seconds
-    pyautogui.moveTo(1000, 440, duration = 1)
-    pyautogui.click(1000, 440)
+    pyautogui.moveTo(1000, 440, duration = 1) #Actual x and y values might need to be tinkered with depending on your screens resolution.
+    pyautogui.click(1000, 440)                # ^ Can be achieved through simple trial and error 
     pyautogui.typewrite("ELA22")            #Replace with desired class ID. 
     pyautogui.typewrite(["enter"])
     time.sleep(5)
@@ -31,4 +31,4 @@ async def on_ready():
     await channel.send(file=discord.File('screenshot.png'))
     driver.quit()
 
-client.run('abcdefghijklmnopqrstuvwxyz')    #Replace wtih your discord bots private token. 
+client.run('abcdefghijklmnopqrstuvwxyz1234567890')    #Replace wtih your discord bots private token. 
