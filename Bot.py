@@ -36,7 +36,7 @@ async def jagre(ctx):
 
 @bot.command()
 async def pihl(ctx):
-    await ctx.send("")
+    await ctx.send("So anyway, here's wonderwall: https://youtu.be/FVdjZYfDuLE")
 
 @bot.command()
 async def schema(ctx, classid="ELA22"): # Asks for a classid, if none is provided, the default value of ELA22 will be used. 
