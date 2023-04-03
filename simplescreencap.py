@@ -1,3 +1,10 @@
+###################################################################
+# First version of the bot which only runs by starting the client.
+# No functionality for specifying which classid is to be used.
+# Left in the repository for future references.
+##################################################################
+
+
 import discord
 import os
 from selenium import webdriver
@@ -27,14 +34,6 @@ async def on_ready():
 
 client.run('BOT TOKEN')
 
-
-
-#below: Xpath ID for the field where the class name is to be entered.
-# //*[@id="fed648b5395048755525b024ba77a8a8"]
-# find_element_by_xpath("//*[@class='stb-SearchBox']") ?
-
 #upcoming:
 #Enter the class ID in the correct field. Refresh the page. 
 #Add a weekly timer.
-
-
