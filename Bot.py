@@ -43,7 +43,6 @@ async def schema(ctx, classid="ELA22"): # Asks for a classid to be sent after !s
     await ctx.send(f"Schema vecka {week_number} för {classid}")
     driver.save_screenshot('screenshot.png')
     await ctx.send(file=discord.File('screenshot.png'))
-    driver.quit()    
     
 #bot.run(BOT_TOKEN) #Uncomment this command and skip the easter eggs below if you only wish to use the schedule command. The ones below are just fun extras.
     
