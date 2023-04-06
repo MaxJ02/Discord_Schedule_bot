@@ -46,3 +46,4 @@ feel free to open a new pull request.
 ## Acknowledgments
 
   - Thanks to [Hampus](https://github.com/yrgohrm) for ideas on how to implement the hosting and text input.
+  - Thanks to this website for making it easy to install the chromedriver on a raspberry pi 4 https://ivanderevianko.com/2020/01/selenium-chromedriver-for-raspberrypi
