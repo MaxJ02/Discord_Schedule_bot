@@ -9,7 +9,7 @@ from datetime import date
 
 bot = commands.Bot(command_prefix = "!", intents = discord.Intents.all())
 
-BOT_TOKEN = "MTA4OTg4MTM5NTUzMjQxNDk4Ng.GMPdBS.RDy8j-DDpuFfVAXRNpghV8ngi973sQj5P7zd0Q"
+BOT_TOKEN = ""
 
 def get_week_number(date):
     
