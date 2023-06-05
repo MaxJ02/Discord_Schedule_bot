@@ -1,3 +1,8 @@
+#####################################################################
+# Working version of the bot that can be summoned with the ! prefix
+# Unable to send the schedule automatically unlike the final version.
+######################################################################
+
 import discord
 from discord.ext import commands
 from discord import app_commands
