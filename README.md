@@ -16,6 +16,8 @@ Requirements for the software and other tools to build, test and push
 - Discord.py
 - Selenium
 - Pyautogui
+- Datetime
+- Schedule
 
 ### Installing
 
@@ -31,11 +33,13 @@ Install the necessary libraries using pip (In an admin command prompt)
     -pip install selenium
     -pip install pyautogui
     -pip install discord
+    -pip install schedule
+    -pip install datetime
 
 ## Running the bot
 
 You can run this bot however you would like, either by hosting it on your own computer, a webhost or something like a raspberry pi.
-Personally this is currently running on a raspberry pi at my university. 
+Personally this is currently running on a raspberry pi 4 at my university. 
 
 ## Contributing
 
@@ -46,4 +50,4 @@ feel free to open a new pull request.
 ## Acknowledgments
 
   - Thanks to [Hampus](https://github.com/yrgohrm) for ideas on how to implement the hosting and text input.
-  - Thanks to this website for making it easy to install the chromedriver on a raspberry pi 4 https://ivanderevianko.com/2020/01/selenium-chromedriver-for-raspberrypi
+  - Thanks to [this](https://ivanderevianko.com/2020/01/selenium-chromedriver-for-raspberrypi) website for making it easy to install the chromedriver on a raspberry pi 4
