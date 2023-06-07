@@ -1,5 +1,5 @@
 ##############################################
-# This bot is made for the ela22 Discord server
+# This bot is made for a class Discord server
 # It's purpose is to post the schedule for the
 # current week in the #schema channel.
 #   - It uses Selenium to open a browser and
@@ -28,7 +28,7 @@ BOT_TOKEN = " "
 
 # runs the script every sunday at 13:00 UTC (15:00 Swedish summer time)
 @tasks.loop(time=datetime.time(hour=13, minute=00)) # UTC time
-async def job_loop(classid="ela22"): # classid is the class id, can be changed to any class id.
+async def job_loop(classid="ela22"): # can be changed to any class id.
     week_num = datetime.date.today().isocalendar()[1] + 1 # gets the current week number and adds 1 to it, as the schedule is for the next week.
     weekday = datetime.datetime.utcnow().weekday() # gets the current weekday
     if weekday == 6:    # if it's sunday, run the script.
